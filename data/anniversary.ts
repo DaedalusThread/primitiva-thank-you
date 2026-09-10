@@ -8,7 +8,7 @@ export const anniversary = {
       id: "hero",
       label: "A small team · A big year",
       title: "One Year Together.",
-      lines: ["Different cities.", "A shared mission.", "And a year we’re grateful to have shared with you."],
+      lines: ["Different cities.", "A shared passion.", "And a year we’re grateful to have shared with you."],
       note: "Quite a year.",
       image: "/images/cat-hero.jpeg",
     },
