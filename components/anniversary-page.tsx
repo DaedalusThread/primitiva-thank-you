@@ -35,16 +35,70 @@ function Label({ children }: { children: React.ReactNode }) {
 }
 
 function CityDiagram({ chapter, active }: { chapter: Extract<Chapter, { id: "three-cities" }>; active: boolean }) {
+  const reduced = useReducedMotion();
+  const flightD = "M 12 58 C 24 38, 33 32, 42 32 C 55 32, 72 42, 87 60";
+
   return (
     <div className="city-map" aria-label="Three connected team locations">
       <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-        <motion.path d="M 12 58 Q 26 18 42 32 Q 64 10 87 60" initial={false} animate={{ pathLength: active ? 1 : 0 }} transition={{ ...transition, duration: 1.4, delay: .25 }} />
+        {/* Continuous dashed flight route */}
+        <motion.path
+          id="flight-route"
+          className="flight-path"
+          d={flightD}
+          initial={false}
+          animate={active ? { opacity: 1 } : { opacity: 0 }}
+          transition={{ ...transition, duration: 0.9, delay: 0.2 }}
+        />
+
+        {/* Flying airplane along the route */}
+        {!reduced && (
+          <g className="flight-airplane">
+            <animateMotion
+              dur="8s"
+              repeatCount="indefinite"
+              rotate="auto"
+            >
+              <mpath href="#flight-route" />
+            </animateMotion>
+            <animate
+              attributeName="opacity"
+              values="0; 1; 1; 1; 0; 0"
+              keyTimes="0; 0.08; 0.5; 0.92; 0.98; 1"
+              dur="8s"
+              repeatCount="indefinite"
+            />
+            {/* Minimalist editorial paper airplane */}
+            <g transform="scale(0.85)">
+              <polygon points="6,0 -4.5,-3.5 -2,0" fill="#181817" />
+              <polygon points="6,0 -2,0 -4.5,3.5" fill="#4A4641" />
+              <line x1="6" y1="0" x2="-2" y2="0" stroke="#FAF8F5" strokeWidth="0.5" strokeLinecap="round" />
+            </g>
+          </g>
+        )}
       </svg>
-      {chapter.cities.map((city, index) => (
-        <motion.div key={city.name} className={`city-point ${"featured" in city && city.featured ? "featured" : ""}`} style={{ left: `${city.x}%`, top: `${city.y}%` }} initial={false} animate={active ? { opacity: 1, scale: 1 } : { opacity: 0, scale: .7 }} transition={{ ...transition, delay: .35 + index * .14 }}>
-          <i /><strong>{city.name}</strong><span>{city.detail}</span>
-        </motion.div>
-      ))}
+      {chapter.cities.map((city, index) => {
+        const isFeatured = "featured" in city && city.featured;
+        const yOffset = isFeatured ? "-6px" : "-4px";
+        return (
+          <motion.div
+            key={city.name}
+            className={`city-point ${isFeatured ? "featured" : ""}`}
+            style={{ left: `${city.x}%`, top: `${city.y}%` }}
+            initial={false}
+            animate={
+              active
+                ? { opacity: 1, scale: 1, x: "-50%", y: yOffset }
+                : { opacity: 0, scale: 0.7, x: "-50%", y: yOffset }
+            }
+            transition={{ ...transition, delay: 0.35 + index * 0.14 }}
+          >
+            <i />
+            <strong>{city.name}</strong>
+            <span>{city.detail}</span>
+          </motion.div>
+        );
+      })}
     </div>
   );
 }
