@@ -94,7 +94,12 @@ export const anniversary = {
       title: "Some things don’t fit into an anniversary summary.",
       statement: "Two personal notes.",
       notes: [
-        { from: "From Jay", body: ["[Jay’s personal message goes here.]"] },
+        {
+          from: "From Jay",
+          body: [
+            "It’s been a meaningful year working together. Thank you for the perspective and judgment you’ve brought to the team.",
+          ],
+        },
         {
           from: "From Xuanhe",
           body: [
