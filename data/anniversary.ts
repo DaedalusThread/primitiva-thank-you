@@ -97,7 +97,7 @@ export const anniversary = {
         {
           from: "From Jay",
           body: [
-            "It’s been a meaningful year working together. Thank you for the perspective and judgment you’ve brought to the team.",
+            "We have been fortunate to have you.",
           ],
         },
         {
