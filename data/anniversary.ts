@@ -99,7 +99,7 @@ export const anniversary = {
     {
       id: "notes",
       label: "09 / From us",
-      title: "Some things don’t fit into a year-end summary.",
+      title: "Some things don’t fit into an anniversary summary.",
       statement: "Two personal notes.",
       notes: [
         { from: "From Jay", body: ["[Jay’s personal message goes here.]"] },
