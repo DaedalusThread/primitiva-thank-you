@@ -22,7 +22,7 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://primitiva-global-one-year-together.primitiva-gl-6265.chatgpt.site'),
+  metadataBase: new URL('https://thank-you.primitivaglobal.com'),
   title: 'One Year Together · Primitiva Global',
   description: 'A first-year anniversary letter from a small team with a big year.',
   openGraph: {
