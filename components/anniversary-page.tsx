@@ -10,7 +10,6 @@ const transition = { duration: 0.85, ease: [0.22, 1, 0.36, 1] as const };
 function Brand() {
   return (
     <div className="brand" aria-label={anniversary.brand.name}>
-      <span className="brand-mark" aria-hidden="true"><i /><i /><i /></span>
       <span>{anniversary.brand.name}</span>
     </div>
   );
