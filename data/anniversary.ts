@@ -98,7 +98,6 @@ export const anniversary = {
         {
           from: "From Xuanhe",
           body: [
-            "You’ve taught me a lot this year — not only about investing, but about people, judgment, patience, and how experience changes the way you see a problem.",
             "There were plenty of moments when we had to learn how to work with each other. And somewhere along the way, you became a little like the older sister of our tiny team.",
             "Thank you for your patience, your honesty, and for always bringing another perspective to the table.",
           ],
