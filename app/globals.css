@@ -91,7 +91,8 @@ button { font: inherit; }
 /* 04 — Profile */
 .profile-section { padding: 17vh 8vw 8vh; background: #232220; color: #FAF8F5; }
 .profile-section .section-label { color: rgba(250, 248, 245, 0.65); }
-.profile-lead { max-width: 900px; color: #DCD7CE; font-size: clamp(33px, 3.8vw, 62px) !important; }
+.profile-section h2,
+.profile-section .profile-lead { max-width: 900px; color: #EDE8DF !important; font-size: clamp(33px, 3.8vw, 62px) !important; }
 .profile-statement { max-width: 1050px; margin: 1.5vh 0 0; white-space: pre-line; font-family: var(--serif); font-size: clamp(61px, 7vw, 112px); line-height: 0.92; letter-spacing: -0.04em; color: #FAF8F5; }
 .profile-lines { position: absolute; right: 8vw; bottom: 11vh; padding-left: 3vw; border-left: 1px solid rgba(250,248,245,0.25); color: #DDD8CE; font-size: clamp(14px, 1.05vw, 17px); line-height: 1.6; }
 .profile-lines p { margin: 0 0 12px; }
@@ -226,7 +227,8 @@ button { font: inherit; }
   .city-point span { font-size: 6px; }
 
   .profile-section { padding: 13vh 26px 7vh; }
-  .profile-lead { font-size: 25px !important; }
+  .profile-section h2,
+  .profile-section .profile-lead { font-size: 25px !important; color: #EDE8DF !important; }
   .profile-statement { margin-top: 1vh; font-size: clamp(46px, 13.5vw, 66px); }
   .profile-lines { right: auto; left: 28px; bottom: 10vh; max-width: calc(100% - 56px); padding-left: 16px; font-size: 11px; }
   .profile-section .hand-note { left: auto; right: 27px; bottom: 5.5vh; font-size: 16px; }
