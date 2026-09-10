@@ -35,16 +35,8 @@ export const anniversary = {
       ],
     },
     {
-      id: "investor",
-      label: "03 / The investor",
-      title: "You have a rare combination:",
-      statement: "a rational mind\nand a deeply human one.",
-      lines: ["You ask hard questions without losing curiosity.", "You see risk without losing optimism."],
-      note: "Sharp thinking. A generous heart.",
-    },
-    {
       id: "growing",
-      label: "04 / Growing together",
+      label: "03 / Growing together",
       title: "We didn’t always see things the same way.",
       statement: "And that turned out to be one of the good things.",
       paragraphs: [
@@ -55,7 +47,7 @@ export const anniversary = {
     },
     {
       id: "small-team",
-      label: "05 / A small team",
+      label: "04 / A small team",
       title: "People came.\nPeople went.",
       statement: "Eventually, the three of us found our rhythm.",
       lines: ["California. Shanghai. New York.", "Still small. Still figuring things out. Still moving."],
@@ -67,7 +59,7 @@ export const anniversary = {
     },
     {
       id: "cat",
-      label: "06 / Another move",
+      label: "05 / Another move",
       title: "And somehow,\neven Kabu crossed an ocean.",
       statement: "Shanghai → California.",
       lines: ["New home.", "Same attitude."],
@@ -80,7 +72,7 @@ export const anniversary = {
     },
     {
       id: "motion",
-      label: "07 / The year in motion",
+      label: "06 / The year in motion",
       title: "A lot happened\nbetween the conversations.",
       milestones: [
         { number: "01", text: "We deployed ~$2M across 4 funds.", meta: "Fund investments" },
@@ -90,7 +82,7 @@ export const anniversary = {
     },
     {
       id: "not-straight",
-      label: "08 / Not a straight line",
+      label: "07 / Not a straight line",
       title: "Mirumi came.\nAnd then it didn’t.",
       statement: "We kept looking anyway.",
       lines: ["For better opportunities.", "Better ideas.", "Better products."],
@@ -98,7 +90,7 @@ export const anniversary = {
     },
     {
       id: "notes",
-      label: "09 / From us",
+      label: "08 / From us",
       title: "Some things don’t fit into an anniversary summary.",
       statement: "Two personal notes.",
       notes: [

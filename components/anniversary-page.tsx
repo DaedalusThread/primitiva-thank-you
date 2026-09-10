@@ -156,17 +156,6 @@ function ChapterView({ chapter, index, active }: { chapter: Chapter; index: numb
     );
   }
 
-  if (chapter.id === "investor") {
-    return (
-      <section className="chapter profile-section" aria-labelledby="investor-title" data-index={index}>
-        <Reveal active={active}><Label>{chapter.label}</Label></Reveal>
-        <Reveal active={active} delay={.08}><h2 id="investor-title" className="profile-lead">{chapter.title}</h2></Reveal>
-        <Reveal active={active} delay={.18}><p className="profile-statement">{chapter.statement}</p></Reveal>
-        <div className="profile-lines">{chapter.lines.map((line, i) => <Reveal active={active} delay={.32 + i * .14} key={line}><p>{line}</p></Reveal>)}</div>
-        <Reveal active={active} delay={.6}><p className="hand-note">{chapter.note}</p></Reveal>
-      </section>
-    );
-  }
 
   if (chapter.id === "growing") {
     return (
