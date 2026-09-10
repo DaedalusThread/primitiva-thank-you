@@ -126,7 +126,7 @@ function ChapterView({ chapter, index, active }: { chapter: Chapter; index: numb
           <Reveal active={active} delay={.42}><p className="hand-note">{chapter.note}</p></Reveal>
         </div>
         <motion.figure className="hero-visual" initial={false} animate={active ? { opacity: 1, scale: 1 } : { opacity: .6, scale: 1.015 }} transition={{ ...transition, duration: 1.05 }}>
-          <Image src={chapter.image} alt="The team’s long-haired cream cat sitting in warm afternoon light" fill priority sizes="(max-width: 800px) 100vw, 62vw" />
+          <Image src={chapter.image} alt="Kabu, the team’s long-haired cream cat, sitting in warm afternoon light" fill priority sizes="(max-width: 800px) 100vw, 62vw" />
           <figcaption>One small family, three cities</figcaption>
         </motion.figure>
       </section>

@@ -68,14 +68,14 @@ export const anniversary = {
     {
       id: "cat",
       label: "06 / Another move",
-      title: "And somehow,\neven the cat crossed an ocean.",
+      title: "And somehow,\neven Kabu crossed an ocean.",
       statement: "Shanghai → California.",
       lines: ["New home.", "Same attitude."],
       note: "New continent. Same boss.",
       photos: [
-        { src: "/images/cat-sleeping.jpeg", alt: "The cream cat asleep on a blanket", caption: "Shanghai · CEO of naps" },
-        { src: "/images/cat-standing.jpeg", alt: "The cream cat standing on a scratcher", caption: "California · Still supervising" },
-        { src: "/images/cat-hero.jpeg", alt: "The cream cat in the afternoon sun", caption: "Same cat. New timezone." },
+        { src: "/images/cat-sleeping.jpeg", alt: "Kabu asleep on a blanket in Shanghai", caption: "Shanghai · CEO of naps" },
+        { src: "/images/cat-standing.jpeg", alt: "Kabu standing on a scratcher in California", caption: "California · Still supervising" },
+        { src: "/images/cat-hero.jpeg", alt: "Kabu in the afternoon sun", caption: "Same Kabu. New timezone." },
       ],
     },
     {
