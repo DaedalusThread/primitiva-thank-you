@@ -83,8 +83,8 @@ export const anniversary = {
       label: "07 / The year in motion",
       title: "A lot happened\nbetween the conversations.",
       milestones: [
-        { number: "01", text: "We backed several funds.", meta: "Fund investments" },
-        { number: "02", text: "We exited X funds.", meta: "Exits" },
+        { number: "01", text: "We deployed ~$2M across 4 funds.", meta: "Fund investments" },
+        { number: "02", text: "We exited 4 funds.", meta: "Exits" },
         { number: "03", text: "We recovered BlackOak’s early redemption fee.", meta: "Persistence matters" },
       ],
     },
