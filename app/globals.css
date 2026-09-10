@@ -89,12 +89,12 @@ button { font: inherit; }
 
 /* 04 — Profile */
 .profile-section { padding: 17vh 8vw 8vh; background: #232220; color: #FAF8F5; }
-.profile-section .section-label { color: #A6A29A; }
-.profile-lead { max-width: 900px; color: #8F8C85; font-size: clamp(33px, 3.8vw, 62px) !important; }
+.profile-section .section-label { color: rgba(250, 248, 245, 0.65); }
+.profile-lead { max-width: 900px; color: #DCD7CE; font-size: clamp(33px, 3.8vw, 62px) !important; }
 .profile-statement { max-width: 1050px; margin: 1.5vh 0 0; white-space: pre-line; font-family: var(--serif); font-size: clamp(61px, 7vw, 112px); line-height: 0.92; letter-spacing: -0.04em; color: #FAF8F5; }
-.profile-lines { position: absolute; right: 8vw; bottom: 11vh; padding-left: 3vw; border-left: 1px solid rgba(250,248,245,0.2); color: #C4C0B8; font-size: clamp(14px, 1.05vw, 17px); line-height: 1.6; }
+.profile-lines { position: absolute; right: 8vw; bottom: 11vh; padding-left: 3vw; border-left: 1px solid rgba(250,248,245,0.25); color: #DDD8CE; font-size: clamp(14px, 1.05vw, 17px); line-height: 1.6; }
 .profile-lines p { margin: 0 0 12px; }
-.profile-section .hand-note { position: absolute; left: 10vw; bottom: 8vh; color: #D5CEC4; }
+.profile-section .hand-note { position: absolute; left: 10vw; bottom: 8vh; color: #E8E2D8; }
 
 /* 05 — Growth */
 .growth-section { display: grid; grid-template-columns: 49% 51%; align-items: center; padding: 8vh 8vw 5vh; background: var(--paper-light); }
